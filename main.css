@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+@media screen and (max-width: 750px) {
+    main{
+        flex-wrap: wrap;
+    }
+    nav .row1, nav .row2 .login, nav .row2 .submit{
+        display: none;
+    }
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0, 0.6);
+}
+a :hover, li:hover{
+    color: rgb(0 0 0)ogin
+}
+a, button{
+    cursor: pointer;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    box-shadow: 0 4px 13px rgb(0 0 0 / 5%);
+    z-index: 99;
+}
+.column1, .column2{
+    margin: 0 30px;
+}
+header nav ul{
+    display: flex;
+    flex-direction: row;
+}
+.column1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+}
+.column1-1{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+}
+.column1 nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    height: 50px;   
+}
+.column1 nav ul li{
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.login{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+nav .row1{
+    gap: 30px;
+}
+nav .row2{
+    gap: 10px;
+}
+header .column2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    padding: 0 10px;
+    gap: 30px;
+}
+header .column2 .title{
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+}
+.column2 .animate ul{
+    display: flex;
+    flex-direction: row;
+    color: rgb(0, 0, 0, 0.6);
+    align-items: center;
+    padding-bottom: 10px;
+    width: 100%;
+  
+}
+.column2 .animate{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.column2 .animate ul li{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+}
+.input{
+    background-color: rgb(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 10px; */
+    height: 40px;
+    width: 100%;
+}
+.input-one{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.input img{
+    color: gray;
+}
+.visual-search{
+    display: flex;
+    justify-content: flex-end;
+}
+input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+}
+.line{
+    border: 0.2px solid rgb(0, 0, 0, 0.1);
+    height: 30px;
+    display: flex;
+    align-self: center;
+}
+header .column1 nav ul .unsplash a{
+    text-decoration: cornflowerblue;
+}
+header .column1 nav ul .submit{
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0, 0.3);
+    outline: none;
+    box-shadow: 0 4px 13px rgb(0 0 0 / 5%);
+    border-radius: 5px;
+}
+header .column1 nav ul .submit button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100px;
+   
+}
+header .column1 nav ul .submit button :hover{
+    border: black 1px solid
+}
+.row2 .login a{
+    width: 50px;
+}
+header .column2 .animate ul li{
+    display: flex;
+    border: blue;
+}
+.animate ul li a{
+    display: flex;    /* width: 200px; */
+    gap: 50px;
+}
+main{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+.main{
+    background-color: white;
+    color: rgb(0, 0, 0, 0.6);
+    width: 100%;
+    margin: 5px 0;
+    border-radius: 5px;
+    padding: 25px 15px;
+}
+main .first-section{
+    
+    background: url(images/karokrasinska-sNHtz720O-s-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    height: 590px;
+}
+main .first-section .section-div{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    
+}
+main .first-section .div-footer a{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.p-small p{
+    color: rgb(225, 225, 225, 0.7);
+    font-size: 10px;
+}
+main .first-section div h1{
+    font-weight: bolder;
+    font-size: 50px;
+}
+main .first-section div p{
+    font-size: 20px;
+    padding: 5px 0;
+}
+main .first-section div .p-medium{
+    font-size: 15px;
+}
+main .first-section .div-footer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* margin: 0 30px; */
+    align-items: flex-end;
+    
+}
+main .first-section .div-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.div-footer .p-small, .div-footer .p-small2, .div-footer .small-p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+}
+.div-footer .p-small2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.div-footer .p-small, .div-footer .small-p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.div-footer .p-small p, .div-footer .p-small2 p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.pictures{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    /* margin-top: 30px; */
+}
+.pictures div{
+    margin-top: 20px;
+}
