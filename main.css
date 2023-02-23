@@ -119,6 +119,7 @@ header .column2 .title{
     justify-content: space-between;
     gap: 30px;
     align-items: center;
+    width: 100%;
 }
 .input{
     background-color: rgb(0, 0, 0, 0.1);
@@ -198,10 +199,14 @@ header .column2 .animate ul li{
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
+    
 }
-.next {
+.animate ul{
+    overflow: hidden;
+}
+/* .next {
     position: fixed;
-}
+} */
 main{
     
     display: flex;
