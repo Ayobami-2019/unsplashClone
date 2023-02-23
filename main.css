@@ -7,11 +7,14 @@
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-@media screen and (max-width: 750px) {
-    main{
-        flex-wrap: wrap;
+@media screen and (max-width: 1200px) {
+    main .pictures{
+        flex-direction: column;
     }
     nav .row1, nav .row2 .login, nav .row2 .submit{
+        display: none;
+    }
+    main .first-section div .input, main .first-section div .p-medium, body main .first-section .div-footer{
         display: none;
     }
 }
@@ -187,6 +190,17 @@ header .column2 .animate ul li{
 .animate ul li a{
     display: flex;    /* width: 200px; */
     gap: 50px;
+   
+}
+.animate{
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+.next {
+    position: fixed;
 }
 main{
     
@@ -195,6 +209,7 @@ main{
     align-items: center;
     justify-content: center;
     color: white;
+    overflow: hidden;
     
 }
 .main{
@@ -212,14 +227,14 @@ main .first-section{
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     height: 100%;
-    height: 590px;
+    height: 700px;
 }
 main .first-section .section-div{
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 60vw;
     margin: auto;
     
 }
@@ -283,8 +298,12 @@ main .first-section .div-footer{
     display: flex;
     flex-direction: row;
     gap: 30px;
-    /* margin-top: 30px; */
+    margin-top: 30px;
 }
 .pictures div{
     margin-top: 20px;
 }
+/* .pictures .row-one, .pictures .row-two, .pictures .row-three{
+    display: flex;
+    flex-direction: row;
+} */
